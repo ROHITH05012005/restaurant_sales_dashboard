@@ -1,0 +1,11 @@
+Outlet ID,Outlet Name,Area,Manager Name,Total Units Sold,Total Revenue,Total Customer Count,Average Bill Size,Avg Peak Hour Sales %,Lunch Peak Share Est,Evening Peak Share Est,Best Selling Product,Worst Selling Product
+OUT001,Indiranagar,East,Aarav Sharma,117685,20593972.42,87316,235.86,57.48,45-50%,50-55%,Chicken Burger,French Fries
+OUT002,Koramangala,South,Ananya Iyer,95162,16192363.83,70929,228.29,68.19,30-35%,65-70%,Chicken Burger,French Fries
+OUT005,MG Road,Central,Vikram Malhotra,89157,16070130.08,66449,241.84,51.45,35-40%,60-65%,Chicken Burger,French Fries
+OUT003,Whitefield,East,Rahul Nair,84573,14815195.53,62997,235.17,61.42,60-65%,35-40%,Chicken Burger,French Fries
+OUT006,Jayanagar,South,Siddharth Rao,80724,13246020.91,60042,220.61,50.29,45-50%,50-55%,Chicken Burger,French Fries
+OUT008,HSR Layout,South,Aditya Verma,81423,13225891.38,60509,218.58,49.96,45-50%,50-55%,Chicken Burger,French Fries
+OUT004,Electronic City,South,Priyanka Sen,79700,12557201.31,59420,211.33,53.69,50-55%,45-50%,Chicken Burger,French Fries
+OUT009,Rajajinagar,West,Sneha Hegde,73002,11088752.67,54155,204.76,50.05,45-50%,50-55%,Chicken Burger,French Fries
+OUT007,Malleshwaram,West,Meera Krishnan,72882,10965130.65,54237,202.17,49.63,45-50%,50-55%,Chicken Burger,French Fries
+OUT010,Yelahanka,North,Rohan Das,61590,8680332.51,45842,189.35,50.08,45-50%,50-55%,Chicken Burger,French Fries

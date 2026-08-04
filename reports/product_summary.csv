@@ -1,0 +1,4 @@
+Product ID,Product Name,Category,Avg Unit Price,Total Units Sold,Gross Sales,Total Discount Amount,Total Net Sales,Total GST Amount,Total Revenue,Sales Share %
+PRD001,Chicken Burger,Burgers,206.0,311845,64832495.0,526398.0,64306097.0,3215305.04,67521402.04,49.13
+PRD002,Veg Burger,Burgers,149.5,283360,42756290.0,346273.75,42410016.25,2120500.96,44530517.21,32.4
+PRD003,French Fries,Sides,100.0,240693,24370370.0,196016.0,24174354.0,1208718.04,25383072.04,18.47

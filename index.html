@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiteAnalytics - Restaurant Sales Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js and PapaParse CDNs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-area">
+                <div class="logo-icon">🍔</div>
+                <div>
+                    <h1>BiteAnalytics</h1>
+                    <p class="subtitle">Fictional Fast-Food Chain Sales Performance (Aug 2025 - Jul 2026)</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <span class="badge status-badge">Live Dataset Connected</span>
+                <span class="badge version-badge">v1.0.0</span>
+            </div>
+        </header>
+
+        <!-- KPI Grid -->
+        <section class="kpi-grid" id="kpi-grid">
+            <div class="kpi-card" id="kpi-revenue">
+                <div class="kpi-icon">💰</div>
+                <div class="kpi-info">
+                    <span class="kpi-label">Total Revenue</span>
+                    <span class="kpi-value">₹--</span>
+                    <span class="kpi-change positive">+12.4% vs FY24-25</span>
+                </div>
+            </div>
+            <div class="kpi-card" id="kpi-footfall">
+                <div class="kpi-icon">👥</div>
+                <div class="kpi-info">
+                    <span class="kpi-label">Customer Footfall</span>
+                    <span class="kpi-value">--</span>
+                    <span class="kpi-change neutral">Annual Total</span>
+                </div>
+            </div>
+            <div class="kpi-card" id="kpi-aov">
+                <div class="kpi-icon">🧾</div>
+                <div class="kpi-info">
+                    <span class="kpi-label">Average Order Value</span>
+                    <span class="kpi-value">₹--</span>
+                    <span class="kpi-change neutral">Spend/Customer</span>
+                </div>
+            </div>
+            <div class="kpi-card" id="kpi-best-prod">
+                <div class="kpi-icon">✨</div>
+                <div class="kpi-info">
+                    <span class="kpi-label">Best Selling Product</span>
+                    <span class="kpi-value">--</span>
+                    <span class="kpi-change highlight">Volume Leader</span>
+                </div>
+            </div>
+            <div class="kpi-card" id="kpi-best-outlet">
+                <div class="kpi-icon">🏆</div>
+                <div class="kpi-info">
+                    <span class="kpi-label">Best Performing Outlet</span>
+                    <span class="kpi-value">--</span>
+                    <span class="kpi-change highlight" id="best-outlet-rev">₹--</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Dashboard Charts Grid -->
+        <section class="dashboard-grid">
+            <!-- Main Trend Chart -->
+            <div class="chart-container span-2">
+                <div class="chart-header">
+                    <h2>Monthly Sales & Profit Trend</h2>
+                    <p>Monthly gross performance against estimated net profit</p>
+                </div>
+                <div class="chart-body">
+                    <canvas id="monthlyTrendChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Product breakdown donut -->
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h2>Revenue Contribution by Product</h2>
+                    <p>Product category sales split & percentage share</p>
+                </div>
+                <div class="chart-body donut-body">
+                    <canvas id="productShareChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Outlet breakdown bar -->
+            <div class="chart-container span-2">
+                <div class="chart-header">
+                    <h2>Outlet Revenue Performance</h2>
+                    <p>Comparison of total sales volume and average order size by outlet</p>
+                </div>
+                <div class="chart-body">
+                    <canvas id="outletBarChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Payment mode pie -->
+            <div class="chart-container">
+                <div class="chart-header">
+                    <h2>Payment Mode Distribution</h2>
+                    <p>UPI, Cards, and Cash transaction share</p>
+                </div>
+                <div class="chart-body donut-body">
+                    <canvas id="paymentModeChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Table Section -->
+        <section class="table-container">
+            <div class="table-header">
+                <h2>Outlet Operational Summary</h2>
+                <p>Regional breakdown, managers, sales numbers, and peak hour distributions</p>
+            </div>
+            <div class="table-wrapper">
+                <table id="outletTable">
+                    <thead>
+                        <tr>
+                            <th>Outlet ID</th>
+                            <th>Outlet Name</th>
+                            <th>Area</th>
+                            <th>Manager Name</th>
+                            <th>Total Units Sold</th>
+                            <th>Total Revenue</th>
+                            <th>Customer Count</th>
+                            <th>Avg Bill Size</th>
+                            <th>Peak Sales Hours (L / E)</th>
+                            <th>Top Product</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="10" style="text-align: center; padding: 2rem; color: var(--text-secondary);">Loading data...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Methodology and Metadata -->
+        <footer class="footer-info">
+            <div class="info-block">
+                <h3>About This Dataset</h3>
+                <p>This dashboard displays analytics compiled from a completely synthetic sales dataset comprising 10,950 transaction records generated programmatically. It models a fictional fast-food burger chain located in premium areas across Bengaluru, India.</p>
+            </div>
+            <div class="info-block">
+                <h3>Simulated Business Rules</h3>
+                <ul>
+                    <li><strong>Monsoon Impacts:</strong> Rainy days systematically reduce sales and walk-in footfall by 10-20%.</li>
+                    <li><strong>Region Profiles:</strong> Electronic City shows high weekday sales (IT parks), while MG Road exhibits strong weekend peaks.</li>
+                    <li><strong>Peak Hours:</strong> Whitefield displays lunch-heavy peaks (60-65% share) while Koramangala is dinner-heavy (65-70% share).</li>
+                    <li><strong>Math Consistency:</strong> 100% exact alignment on GST (5%), discount rates (5%/10%), gross sales, and average bill size calculations.</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

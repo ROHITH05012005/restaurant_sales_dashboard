@@ -1,0 +1,41 @@
+Metric Group,Metric Name,Metric Value
+Executive KPI,Total Revenue (INR),137434991.29
+Executive KPI,Total Customer Footfall,621896
+Executive KPI,Average Daily Sales (INR),376534.22
+Executive KPI,Average Order Value (INR),220.99
+Executive KPI,Best Selling Product,Chicken Burger
+Executive KPI,Best Outlet Name,Indiranagar
+Executive KPI,Worst Outlet Name,Yelahanka
+Executive KPI,Highest Revenue Month,December 2025
+Executive KPI,Lowest Revenue Month,September 2025
+Executive KPI,Year-over-Year Trend,+12.4% (vs Fictional FY24-25 baseline)
+Executive KPI,Revenue Q1 FY 2026-27 (INR),34572474.73
+Executive KPI,Revenue Q2 FY 2025-26 (INR),20818383.49
+Executive KPI,Revenue Q2 FY 2026-27 (INR),10614876.14
+Executive KPI,Revenue Q3 FY 2025-26 (INR),37419517.41
+Executive KPI,Revenue Q4 FY 2025-26 (INR),34009739.52
+Top 10 Revenue Days,Rank 1: 2025-12-31,578529.0
+Top 10 Revenue Days,Rank 2: 2025-12-06,542062.5
+Top 10 Revenue Days,Rank 3: 2025-12-25,540550.5
+Top 10 Revenue Days,Rank 4: 2025-12-13,534996.26
+Top 10 Revenue Days,Rank 5: 2025-12-07,531900.6
+Top 10 Revenue Days,Rank 6: 2025-12-28,531014.4
+Top 10 Revenue Days,Rank 7: 2026-05-17,524258.18
+Top 10 Revenue Days,Rank 8: 2025-12-20,524026.66
+Top 10 Revenue Days,Rank 9: 2025-12-21,522732.0
+Top 10 Revenue Days,Rank 10: 2025-12-27,522348.75
+Bottom 10 Revenue Days,Rank 1: 2025-09-08,260072.93
+Bottom 10 Revenue Days,Rank 2: 2025-09-02,260515.5
+Bottom 10 Revenue Days,Rank 3: 2026-07-02,265840.84
+Bottom 10 Revenue Days,Rank 4: 2026-07-08,269798.03
+Bottom 10 Revenue Days,Rank 5: 2025-09-10,270805.5
+Bottom 10 Revenue Days,Rank 6: 2025-08-12,271850.25
+Bottom 10 Revenue Days,Rank 7: 2025-08-25,272539.57
+Bottom 10 Revenue Days,Rank 8: 2025-08-19,273111.31
+Bottom 10 Revenue Days,Rank 9: 2025-09-18,273204.22
+Bottom 10 Revenue Days,Rank 10: 2025-08-18,273719.25
+Payment Mode Distribution,UPI,45.48% Share (INR 62499749.82)
+Payment Mode Distribution,Credit Card,24.54% Share (INR 33728017.77)
+Payment Mode Distribution,Cash,15.05% Share (INR 20677380.77)
+Payment Mode Distribution,Debit Card,10.26% Share (INR 14107191.84)
+Payment Mode Distribution,Wallet,4.67% Share (INR 6422651.09)
