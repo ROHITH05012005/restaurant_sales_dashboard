@@ -56,6 +56,14 @@ restaurant_sales_dashboard/
   - Created `get_descriptive_stats.py` supporting both standard Python (fallback mode) and Pandas (pro mode) formatting.
   - Provides total counts, min/max range, mean, standard deviation, and breakdowns by outlet performance, product shares, payment distributions, and weather impacts.
 
+### Phase 5: Interactive BI Dashboard & Version Control (August 4, 2026 - 12:58 PM)
+- **Goal**: Establish a visual layer for local exploration and configure project for hosting on Vercel and version control on GitHub.
+- **Implementation**:
+  - Built an interactive, single-page web dashboard using premium dark mode styling, Outfit and Plus Jakarta Sans fonts, glassmorphism cards, and radial background glow effects (`index.html`, `style.css`).
+  - Integrated dynamic PapaParse parsing to load CSV outputs on the fly, rendering Chart.js visualizations (Monthly trends, Product shares, Outlet bars, and Payments).
+  - Initialized a local Git repository and committed all codebase components.
+  - Provided deployment guidelines for automatic GitHub-to-Vercel hosting pipeline integration.
+
 ---
 
 ## 3. Key Design Choices & Business Logic
