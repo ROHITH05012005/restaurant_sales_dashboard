@@ -2,6 +2,9 @@
 
 This logbook records the design decisions, development timeline, validation checks, and folder structure changes implemented during the building of this synthetic sales dataset generator.
 
+* **Live Interactive Dashboard**: [restaurantsalesdashboard.vercel.app](https://restaurantsalesdashboard.vercel.app)
+* **GitHub Repository**: [github.com/ROHITH05012005/restaurant_sales_dashboard](https://github.com/ROHITH05012005/restaurant_sales_dashboard)
+
 ---
 
 ## 1. Project Directory Structure

@@ -2,6 +2,9 @@
 
 A self-contained synthetic sales data generator and an interactive web analytics dashboard for a fictional fast-food chain. It models premium outlets located in commercial areas across Bengaluru, India, over a full year (August 1, 2025, to July 31, 2026).
 
+* **Live Interactive Dashboard**: [restaurantsalesdashboard.vercel.app](https://restaurantsalesdashboard.vercel.app)
+* **GitHub Repository**: [github.com/ROHITH05012005/restaurant_sales_dashboard](https://github.com/ROHITH05012005/restaurant_sales_dashboard)
+
 ---
 
 ## 📂 Project Directory Structure
